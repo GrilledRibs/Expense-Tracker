@@ -55,3 +55,4 @@ D:\Projects\Expense Tracker\Expense Tracker\Expense Tracker\bin\Debug\net9.0-win
 D:\Projects\Expense Tracker\Expense Tracker\Expense Tracker\bin\Debug\net9.0-windows\runtimes\win-arm64\native\e_sqlite3.dll
 D:\Projects\Expense Tracker\Expense Tracker\Expense Tracker\bin\Debug\net9.0-windows\runtimes\win-x64\native\e_sqlite3.dll
 D:\Projects\Expense Tracker\Expense Tracker\Expense Tracker\bin\Debug\net9.0-windows\runtimes\win-x86\native\e_sqlite3.dll
+D:\Projects\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\net9.0-windows\Expense Tracker.sourcelink.json

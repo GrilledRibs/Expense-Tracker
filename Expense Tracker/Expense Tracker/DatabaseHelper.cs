@@ -1,11 +1,12 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Data.SQLite;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-using System.Data.SQLite;
-using System.IO;
+using System.Windows.Forms;
 
 namespace Expense_Tracker
 {
@@ -14,8 +15,11 @@ namespace Expense_Tracker
         private static string connectionString = @"Data Source=D:\Projects\Expense Tracker\Expense Tracker\Files\ExpenseData.db";
         public static void InitializeDatabase()
         {
-            //SQLiteConnection.CreateFile(@"..\..\Files\ExpenseData.db");
-            SQLiteConnection.CreateFile(@"D:\Projects\Expense Tracker\Expense Tracker\Files\ExpenseData.db");
+            if(!File.Exists(@"D:\Projects\Expense Tracker\Expense Tracker\Files\ExpenseData.db"))
+            {
+                SQLiteConnection.CreateFile(@"D:\Projects\Expense Tracker\Expense Tracker\Files\ExpenseData.db");
+            }
+
             using (var connection = new SQLiteConnection(connectionString))
             {
                 connection.Open();
@@ -60,13 +64,12 @@ namespace Expense_Tracker
             }
         }
 
-        public static List<Expense> GetAllExpense()
+        private static List<Expense> ReadExpenses(string query)
         {
             List<Expense> expenseList = new List<Expense>();
             using (SQLiteConnection connection = new SQLiteConnection(connectionString))
             {
                 connection.Open();
-                string query = "SELECT * FROM expenses";
 
                 using (SQLiteCommand command = new SQLiteCommand(query, connection))
                 {
@@ -85,7 +88,33 @@ namespace Expense_Tracker
                     }
                 }
             }
-            return expenseList;
+            return expenseList ;
+        }
+
+        public static List<Expense> GetExpense()
+        {
+            string query = "SELECT * FROM expenses";
+            return ReadExpenses(query);
+        }
+        public static List<Expense> GetExpense(int year)
+        {
+            string query = $"SELECT * FROM expenses WHERE date LIKE '%{year.ToString()}%'";
+            return ReadExpenses(query);
+        }
+        public static List<Expense> GetExpense(int year, int month)
+        {
+            string query = $"SELECT * FROM expenses WHERE date LIKE '%{year.ToString()}-{month.ToString("00")}%'";
+            return ReadExpenses(query);
+        }
+        public static List<Expense> GetExpense(int year, int month, int day)
+        {
+            string query = $"SELECT * FROM expenses WHERE date LIKE '%{year.ToString()}-{month.ToString("00")}-{day.ToString("00")}%'";
+            return ReadExpenses(query);
+        }
+        public static List<Expense> GetExpense(DateTime date)
+        {
+            string query = $"SELECT * FROM expenses WHERE date LIKE '%{date.Year.ToString()}-{date.Month.ToString("00")}-{date.Day.ToString("00")}%'";
+            return ReadExpenses(query);
         }
     }
 }
