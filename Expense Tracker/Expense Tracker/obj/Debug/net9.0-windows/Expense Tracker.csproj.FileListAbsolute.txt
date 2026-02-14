@@ -9,7 +9,6 @@ D:\Projects\Expense Tracker\Expense Tracker\Expense Tracker\bin\Debug\net9.0-win
 D:\Projects\Expense Tracker\Expense Tracker\Expense Tracker\bin\Debug\net9.0-windows\runtimes\win7-x64\native\sqlite3.dll
 D:\Projects\Expense Tracker\Expense Tracker\Expense Tracker\bin\Debug\net9.0-windows\runtimes\win7-x86\native\sqlite3.dll
 D:\Projects\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\net9.0-windows\Expense Tracker.csproj.AssemblyReference.cache
-D:\Projects\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\net9.0-windows\Expense_Tracker.Form1.resources
 D:\Projects\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\net9.0-windows\Expense Tracker.csproj.GenerateResource.cache
 D:\Projects\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\net9.0-windows\Expense Tracker.GeneratedMSBuildEditorConfig.editorconfig
 D:\Projects\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\net9.0-windows\Expense Tracker.AssemblyInfoInputs.cache
@@ -56,3 +55,7 @@ D:\Projects\Expense Tracker\Expense Tracker\Expense Tracker\bin\Debug\net9.0-win
 D:\Projects\Expense Tracker\Expense Tracker\Expense Tracker\bin\Debug\net9.0-windows\runtimes\win-x64\native\e_sqlite3.dll
 D:\Projects\Expense Tracker\Expense Tracker\Expense Tracker\bin\Debug\net9.0-windows\runtimes\win-x86\native\e_sqlite3.dll
 D:\Projects\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\net9.0-windows\Expense Tracker.sourcelink.json
+D:\Projects\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\net9.0-windows\Expense_Tracker.MainMenu.resources
+D:\Projects\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\net9.0-windows\Expense_Tracker.Forms.AddExpenseForm.resources
+D:\Projects\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\net9.0-windows\Expense_Tracker.Forms.InvalidInputWarning.resources
+D:\Projects\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\net9.0-windows\Expense_Tracker.Forms.SuccessFailureForm.resources

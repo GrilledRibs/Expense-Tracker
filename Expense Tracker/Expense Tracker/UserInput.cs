@@ -14,7 +14,7 @@ namespace Expense_Tracker
         string category;
         string description;
         DateTime date;
-        public void SetExpense()
+        public void AddExpense()
         {
 
             //missing: get input from user

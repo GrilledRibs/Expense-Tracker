@@ -14,6 +14,11 @@ namespace Expense_Tracker
         public string description { get; set; }
         public DateTime date { get; set; }
 
+        public Expense()
+        {
+
+        }
+
         public Expense(int _id, decimal _amount, string _category, string _description, DateTime _date)
         {
             id = _id;
