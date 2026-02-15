@@ -37,7 +37,8 @@ namespace Expense_Tracker.Forms
                 expense.amount = result;
             else
             {
-                Debug.WriteLine("Invalid user input in amount box");
+                //Debug.WriteLine("Invalid user input in amount box");
+                Trace.TraceWarning("Invalid user input in amount box: \"{0}\"", AmountBox.Text);
                 invalidInputWarning.Show();
                 return;
             }
