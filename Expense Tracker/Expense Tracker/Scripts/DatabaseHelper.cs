@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SQLite;
 using System.Diagnostics;
 using System.IO;
@@ -153,6 +154,31 @@ namespace Expense_Tracker
         {
             string query = $"SELECT * FROM expenses WHERE date LIKE '%{date.Year.ToString()}-{date.Month.ToString("00")}-{date.Day.ToString("00")}%'";
             return ReadExpenses(query);
+        }
+
+        private static DataTable ReadExpensesDataTable(string query)
+        {
+            List<Expense> expenseList = new List<Expense>();
+            DataTable dataTable;
+            using (SQLiteConnection connection = new SQLiteConnection(connectionString))
+            {
+                connection.Open();
+                SQLiteDataAdapter adapter = new SQLiteDataAdapter(query, connection);
+                dataTable = new DataTable();
+                adapter.Fill(dataTable);
+            }
+            return dataTable;
+        }
+
+        public static DataTable GetExpenseDataTable()
+        {
+            string query = "SELECT * FROM expenses ORDER BY date DESC";
+            return ReadExpensesDataTable(query);
+        }
+        public static DataTable GetExpenseDataTable(string columns)
+        {
+            string query = $"SELECT {columns} FROM expenses ORDER BY date DESC";
+            return ReadExpensesDataTable(query);
         }
     }
 }

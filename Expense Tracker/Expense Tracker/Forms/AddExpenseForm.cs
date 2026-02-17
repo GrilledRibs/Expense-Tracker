@@ -16,7 +16,8 @@ namespace Expense_Tracker.Forms
     {
         Expense expense;
         SuccessFailureForm successFailureForm;
-        InvalidInputWarning invalidInputWarning = new InvalidInputWarning();   
+        InvalidInputWarning invalidInputWarning = new InvalidInputWarning();
+        public Action updateTables;
 
         public AddExpenseForm()
         {
@@ -48,7 +49,10 @@ namespace Expense_Tracker.Forms
             expense.date = DateTime.Now;
 
             if (DatabaseHelper.AddExpenseEntry(expense))
+            {
                 (successFailureForm = new SuccessFailureForm(true)).Show();
+                updateTables?.Invoke();
+            }               
             else
                 (successFailureForm = new SuccessFailureForm(false)).Show();
 
