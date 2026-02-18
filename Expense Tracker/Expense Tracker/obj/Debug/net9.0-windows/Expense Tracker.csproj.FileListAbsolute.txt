@@ -59,3 +59,4 @@ D:\Projects\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\net9.0-win
 D:\Projects\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\net9.0-windows\Expense_Tracker.Forms.AddExpenseForm.resources
 D:\Projects\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\net9.0-windows\Expense_Tracker.Forms.InvalidInputWarning.resources
 D:\Projects\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\net9.0-windows\Expense_Tracker.Forms.SuccessFailureForm.resources
+D:\Projects\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\net9.0-windows\Expense_Tracker.Forms.ConfirmationForm.resources

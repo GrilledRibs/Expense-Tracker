@@ -37,6 +37,7 @@
             Expense = new DataGridViewTextBoxColumn();
             thisYear = new Button();
             lastYear = new Button();
+            DeleteTable = new Button();
             ((System.ComponentModel.ISupportInitialize)expenseBindingSource).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
@@ -110,11 +111,22 @@
             lastYear.UseVisualStyleBackColor = true;
             lastYear.Click += lastYear_Click;
             // 
+            // DeleteTable
+            // 
+            DeleteTable.Location = new Point(112, 12);
+            DeleteTable.Name = "DeleteTable";
+            DeleteTable.Size = new Size(75, 23);
+            DeleteTable.TabIndex = 5;
+            DeleteTable.Text = "Delete Data";
+            DeleteTable.UseVisualStyleBackColor = true;
+            DeleteTable.Click += DeleteTable_Click;
+            // 
             // MainMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(665, 379);
+            Controls.Add(DeleteTable);
             Controls.Add(lastYear);
             Controls.Add(thisYear);
             Controls.Add(dataGridView2);
@@ -138,5 +150,6 @@
         private DataGridViewTextBoxColumn Expense;
         private Button thisYear;
         private Button lastYear;
+        private Button DeleteTable;
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Expense_Tracker.Forms;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
@@ -179,6 +180,24 @@ namespace Expense_Tracker
         {
             string query = $"SELECT {columns} FROM expenses ORDER BY date DESC";
             return ReadExpensesDataTable(query);
+        }
+
+        public static void DeleteTablePrompt(Action _UpdateTables)
+        {
+            ConfirmationForm confirmationForm = new ConfirmationForm(DeleteTable, _UpdateTables, "Are you sure you want to delete all data? This action cannot be undone.");
+            confirmationForm.Show();
+        }
+
+        private static void DeleteTable()
+        {
+            using (SQLiteConnection connection = new SQLiteConnection(connectionString))
+            {
+                connection.Open();
+                using (SQLiteCommand command = new SQLiteCommand("DELETE FROM expenses;", connection))
+                {
+                    command.ExecuteNonQuery();
+                }
+            }
         }
     }
 }

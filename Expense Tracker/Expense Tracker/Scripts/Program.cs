@@ -9,9 +9,10 @@ namespace Expense_Tracker
         static void Main()
         {
             ApplicationConfiguration.Initialize();
+            DatabaseHelper.InitializeDatabase();
             Application.Run(new MainMenu());
 
-            DatabaseHelper.InitializeDatabase();
+            
         }
     }
 }

@@ -29,7 +29,7 @@ namespace Expense_Tracker
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
-            
+
             UpdateTables();
             dataGridView1.RowHeadersVisible = false;
             dataGridView2.RowHeadersVisible = false;
@@ -123,6 +123,11 @@ namespace Expense_Tracker
                 }
                 index++;
             }
+        }
+
+        private void DeleteTable_Click(object sender, EventArgs e)
+        {
+            DatabaseHelper.DeleteTablePrompt(UpdateTables);
         }
     }
 }

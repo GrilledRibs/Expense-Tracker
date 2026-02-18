@@ -4,6 +4,9 @@
     <Compile Update="Forms\AddExpenseForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\ConfirmationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\InvalidInputWarning.cs">
       <SubType>Form</SubType>
     </Compile>

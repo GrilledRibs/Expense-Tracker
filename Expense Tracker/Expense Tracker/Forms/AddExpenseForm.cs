@@ -50,7 +50,7 @@ namespace Expense_Tracker.Forms
 
             if (DatabaseHelper.AddExpenseEntry(expense))
             {
-                (successFailureForm = new SuccessFailureForm(true)).Show();
+                //(successFailureForm = new SuccessFailureForm(true)).Show();
                 updateTables?.Invoke();
             }               
             else
