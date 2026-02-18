@@ -15,15 +15,20 @@ namespace Expense_Tracker
 {
     internal class DatabaseHelper
     {
-        private static string connectionString = @"Data Source=D:\Projects\Expense Tracker\Expense Tracker\Files\ExpenseData.db";
         
+        private static string connectionString = "";
+
         // creates a database file and/or table in the SQLite database if there isnt one already
         public static void InitializeDatabase()
         {
-            if(!File.Exists(@"D:\Projects\Expense Tracker\Expense Tracker\Files\ExpenseData.db"))
+            string currentDir = Directory.GetCurrentDirectory();
+            connectionString = @"Data Source=" + currentDir + @"\ExpenseData.db";
+
+            if (!File.Exists(currentDir + @"\ExpenseData.db"))
             {
-                SQLiteConnection.CreateFile(@"D:\Projects\Expense Tracker\Expense Tracker\Files\ExpenseData.db");
+                SQLiteConnection.CreateFile(currentDir + @"\ExpenseData.db");
             }
+
 
             using (var connection = new SQLiteConnection(connectionString))
             {

@@ -1,0 +1,3 @@
+D:\Projects\Expense Tracker\Expense Tracker\Expense Tracker\bin\Release\net9.0-windows\win-x64\publish\Expense Tracker.pdb
+D:\Projects\Expense Tracker\Expense Tracker\Expense Tracker\bin\Release\net9.0-windows\win-x64\publish\e_sqlite3.dll
+D:\Projects\Expense Tracker\Expense Tracker\Expense Tracker\bin\Release\net9.0-windows\win-x64\publish\Expense Tracker.exe

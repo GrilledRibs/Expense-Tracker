@@ -16,6 +16,7 @@ namespace Expense_Tracker.Forms
         public SuccessFailureForm(bool _success)
         {
             InitializeComponent();
+            this.Text = "Expense Tracker";
             this.StartPosition = FormStartPosition.CenterScreen;
             success = _success;
             SuccessLabel.Visible = success;

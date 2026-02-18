@@ -15,6 +15,7 @@ namespace Expense_Tracker.Forms
         public InvalidInputWarning()
         {
             InitializeComponent();
+            this.Text = "Invalid Input";
             this.StartPosition = FormStartPosition.CenterScreen;
         }
 

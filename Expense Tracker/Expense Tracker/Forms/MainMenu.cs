@@ -17,7 +17,7 @@ namespace Expense_Tracker
 {
     public partial class MainMenu : Form
     {
-
+        
         decimal totalExpensesThisYear = 0;
         decimal totalExpensesLastYear = 0;
         List<Expense> expensesThisYear = new List<Expense>();
@@ -28,6 +28,7 @@ namespace Expense_Tracker
         public MainMenu()
         {
             InitializeComponent();
+            this.Text = "Expense Tracker";
             this.StartPosition = FormStartPosition.CenterScreen;
 
             UpdateTables();
@@ -39,17 +40,20 @@ namespace Expense_Tracker
             dataGridView1.Columns[0].Width = 60;
             dataGridView1.Columns[1].Width = 80;
             dataGridView1.Columns[2].Width = 100;
-            //dataGridView1.Columns[3].Width = 215;
 
             dataGridView2.Columns[1].Width = 70;
 
             dataGridView1.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridView2.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            //dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
         }
 
         public void UpdateTables()
         {
+            expensesThisYear = new List<Expense>();
+            expensesLastYear = new List<Expense>();
+            monthlyExpensesThisYear = new List<decimal>(new decimal[12]);
+            monthlyExpensesLastYear = new List<decimal>(new decimal[12]);
+
             expensesThisYear = DatabaseHelper.GetExpense(DateTime.Now.Year);
             foreach (Expense expense in expensesThisYear)
             {

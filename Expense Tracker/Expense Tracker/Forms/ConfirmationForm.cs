@@ -22,6 +22,7 @@ namespace Expense_Tracker.Forms
             onConfirm2 = _onConfirm2;
             message = _message;
             InitializeComponent();
+            this.Text = "Confirmation";
             this.StartPosition = FormStartPosition.CenterScreen;
             this.label1.Text = message;
         }
