@@ -23,7 +23,7 @@
       "RelativeMoniker": "D:0:0:{2E3BAF58-2831-4732-AE9F-B5C22FA9B33D}|Expense Tracker\\Expense Tracker.csproj|solutionrelative:expense tracker\\forms\\confirmationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E3BAF58-2831-4732-AE9F-B5C22FA9B33D}|Expense Tracker\\Expense Tracker.csproj|d:\\projects\\expense tracker\\expense tracker\\expense tracker\\forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2E3BAF58-2831-4732-AE9F-B5C22FA9B33D}|Expense Tracker\\Expense Tracker.csproj|D:\\Projects\\Expense Tracker\\Expense Tracker\\expense tracker\\forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2E3BAF58-2831-4732-AE9F-B5C22FA9B33D}|Expense Tracker\\Expense Tracker.csproj|solutionrelative:expense tracker\\forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -34,11 +34,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
@@ -48,7 +56,7 @@
               "RelativeDocumentMoniker": "Expense Tracker\\Forms\\AddExpenseForm.cs",
               "ToolTip": "D:\\Projects\\Expense Tracker\\Expense Tracker\\Expense Tracker\\Forms\\AddExpenseForm.cs",
               "RelativeToolTip": "Expense Tracker\\Forms\\AddExpenseForm.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAwwDMAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-18T02:33:31.045Z",
               "EditorCaption": ""
@@ -63,20 +71,7 @@
               "RelativeToolTip": "Expense Tracker\\Forms\\ConfirmationForm.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAApwBcAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-18T02:11:02.486Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MainMenu.cs [Design]",
-              "DocumentMoniker": "D:\\Projects\\Expense Tracker\\Expense Tracker\\Expense Tracker\\Forms\\MainMenu.cs",
-              "RelativeDocumentMoniker": "Expense Tracker\\Forms\\MainMenu.cs",
-              "ToolTip": "D:\\Projects\\Expense Tracker\\Expense Tracker\\Expense Tracker\\Forms\\MainMenu.cs [Design]",
-              "RelativeToolTip": "Expense Tracker\\Forms\\MainMenu.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-17T03:11:54.3Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-02-18T02:11:02.486Z"
             },
             {
               "$type": "Document",
@@ -101,8 +96,7 @@
               "RelativeToolTip": "Expense Tracker\\Scripts\\DatabaseHelper.cs",
               "ViewState": "AgIAAGEAAAAAAAAAAIAwwHIAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T03:10:56.459Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-16T03:10:56.459Z"
             },
             {
               "$type": "Document",
@@ -114,8 +108,18 @@
               "RelativeToolTip": "Expense Tracker\\Scripts\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T03:10:58.249Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-16T03:10:58.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainMenu.cs [Design]",
+              "DocumentMoniker": "D:\\Projects\\Expense Tracker\\Expense Tracker\\Expense Tracker\\Forms\\MainMenu.cs",
+              "RelativeDocumentMoniker": "Expense Tracker\\Forms\\MainMenu.cs",
+              "ToolTip": "D:\\Projects\\Expense Tracker\\Expense Tracker\\Expense Tracker\\Forms\\MainMenu.cs [Design]",
+              "RelativeToolTip": "Expense Tracker\\Forms\\MainMenu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T03:11:54.3Z"
             }
           ]
         }
